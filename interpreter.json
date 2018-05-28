@@ -1,0 +1,148 @@
+{
+  "interpreterSettings": {
+    "2DDR48RF5": {
+      "id": "2DDR48RF5",
+      "name": "psql",
+      "group": "psql",
+      "properties": {
+        "zeppelin.interpreter.output.limit": "102400",
+        "postgresql.driver.name": "org.postgresql.Driver",
+        "postgresql.password": "pass1",
+        "postgresql.url": "jdbc:postgresql://localhost:5432/somedatabase",
+        "postgresql.max.result": "1000",
+        "zeppelin.interpreter.localRepo": "/opt/zeppelin/local-repo/2DDR48RF5",
+        "postgresql.user": "user1"
+      },
+      "status": "READY",
+      "interpreterGroup": [
+        {
+          "name": "sql",
+          "class": "org.apache.zeppelin.postgresql.PostgreSqlInterpreter",
+          "defaultInterpreter": false,
+          "editor": {}
+        }
+      ],
+      "dependencies": [],
+      "option": {
+        "remote": true,
+        "port": -1,
+        "perNote": "shared",
+        "perUser": "scoped",
+        "isExistingProcess": false,
+        "setPermission": true,
+        "users": [
+          "user1    ",
+          "admin "
+        ],
+        "isUserImpersonate": false
+      }
+    },
+    "2DG33FQU9": {
+      "id": "2DG33FQU9",
+      "name": "user2",
+      "group": "psql",
+      "properties": {
+        "zeppelin.interpreter.output.limit": "102400",
+        "postgresql.driver.name": "org.postgresql.Driver",
+        "postgresql.password": "pass2",
+        "postgresql.url": "jdbc:postgresql://localhost:5432/somedatabase",
+        "postgresql.max.result": "1000",
+        "postgresql.user": "user2",
+        "zeppelin.interpreter.localRepo": "/opt/zeppelin/local-repo/2DG33FQU9"
+      },
+      "status": "READY",
+      "interpreterGroup": [
+        {
+          "name": "sql",
+          "class": "org.apache.zeppelin.postgresql.PostgreSqlInterpreter",
+          "defaultInterpreter": false,
+          "editor": {}
+        }
+      ],
+      "dependencies": [],
+      "option": {
+        "remote": true,
+        "port": -1,
+        "perNote": "shared",
+        "perUser": "scoped",
+        "isExistingProcess": false,
+        "setPermission": true,
+        "users": [
+          "user2  ",
+          "admin "
+        ],
+        "isUserImpersonate": false
+      }
+    }
+  },
+  "interpreterBindings": {
+    "2DG5T4TGF": [
+      "2DDR48RF5"
+    ],
+    "2DEB63QNQ": [
+      "2DDR48RF5",
+      "2DG33FQU9"
+    ],
+    "2DGDQU7QV": [
+      "2DDR48RF5",
+      "2DG33FQU9"
+    ],
+    "2DDQ6S6YX": [
+      "2DG33FQU9",
+      "2DDR48RF5"
+    ]
+  },
+  "interpreterRepositories": [
+    {
+      "id": "central",
+      "type": "default",
+      "url": "http://repo1.maven.org/maven2/",
+      "releasePolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "snapshotPolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "mirroredRepositories": [],
+      "repositoryManager": false
+    },
+    {
+      "id": "local",
+      "type": "default",
+      "url": "file:///root/.m2/repository",
+      "releasePolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "snapshotPolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "mirroredRepositories": [],
+      "repositoryManager": false
+    },
+    {
+      "id": "local",
+      "type": "default",
+      "url": "file:///opt/zeppelin/.m2/repository",
+      "releasePolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "snapshotPolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "mirroredRepositories": [],
+      "repositoryManager": false
+    }
+  ]
+}

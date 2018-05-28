@@ -1,0 +1,46 @@
+{
+  "authInfo": {
+    "2DG5T4TGF": {
+      "owners": [
+        "operator"
+      ],
+      "readers": [],
+      "writers": []
+    },
+    "2DDQ6S6YX": {
+      "owners": [
+        "user2",
+        "admin"
+      ],
+      "readers": [
+        "user2",
+        "admin"
+      ],
+      "writers": [
+        "user2",
+        "admin"
+      ]
+    },
+    "2DGDQU7QV": {
+      "owners": [
+        "user1",
+        "admin"
+      ],
+      "readers": [
+        "user1",
+        "admin"
+      ],
+      "writers": [
+        "user1",
+        "admin"
+      ]
+    },
+    "2DEB63QNQ": {
+      "owners": [
+        "user2"
+      ],
+      "readers": [],
+      "writers": []
+    }
+  }
+}
